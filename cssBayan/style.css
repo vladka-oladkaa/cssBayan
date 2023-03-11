@@ -1,3 +1,22 @@
 * {
     box-sizing: border-box;
 }
+
+body{
+    background-color: rgb(255, 192, 115);
+}
+
+.main_wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.line{
+    display: block;
+    width: 1440px;
+    border: 1px solid;
+    border-color: black;
+}
+
+
+
