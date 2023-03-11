@@ -18,5 +18,34 @@ body{
     border-color: black;
 }
 
+.image-mems{
+    margin: 0 auto;
+}
+
+.first-mem{
+    display: flex;
+    flex-direction: column;
+}
+
+.second-mem{
+    display: flex;
+    flex-direction: column;
+}
+
+.third-mem{
+    display: flex;
+    flex-direction: column;
+}
+
+.fourth-mem{
+    display: flex;
+    flex-direction: column;
+}
+
+.fives-mem{
+    display: flex;
+    flex-direction: column;
+}
+
 
 
