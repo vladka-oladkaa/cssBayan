@@ -30,7 +30,7 @@ p{
 
 .line{
     display: block;
-    width: 1440px;
+    max-width: 1440px;
     border: 1px solid;
     border-color: black;
 }
@@ -41,6 +41,49 @@ p{
     transition: 0.4s;
     object-fit: cover;
 }
+
+@media (min-width: 768px) and (max-width: 1420px) {
+    .plus-one::before,
+    .plus-one
+{
+    opacity: 1;
+}
+  }
+
+  @media (min-width: 768px) and (max-width: 1420px) {
+    h1
+{
+    font-size: 25px;
+}
+  }
+
+  @media (min-width: 768px) and (max-width: 1420px) {
+    p
+{
+    font-size: 20px;
+}
+  }
+
+  @media (min-width: 320px) and (max-width: 767.4px) {
+    .image-mems-first, .image-mems-second, .image-mems-third, .image-mems-fourth, .image-mems-fives
+{
+    width: 300px;
+}
+  }
+
+  @media (min-width: 320px) and (max-width: 767.4px) {
+    h1
+{
+    font-size: 20px;
+}
+  }
+
+  @media (min-width: 320px) and (max-width: 767.4px) {
+    p
+{
+    font-size: 15px;
+}
+  }
 
 .image-mems-second{
     margin: 0 auto;
@@ -101,6 +144,7 @@ p{
     align-items: center;
     cursor: pointer;
     color: rgb(12, 14, 157);
+    transition: 0.5s;
 }
 
 .label {
