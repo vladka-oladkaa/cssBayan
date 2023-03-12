@@ -3,12 +3,29 @@
 }
 
 body{
-    background-color: rgb(255, 192, 115);
+    background-color: rgb(220, 243, 126);
 }
 
 .main_wrapper{
     max-width: 1440px;
     margin: 0 auto;
+}
+
+.main_wrapper:hover{
+    cursor: pointer;
+}
+
+.main_wrapper:hover .title-mem{
+    color: black;
+}
+
+.title{
+    text-align: center;
+}
+
+p{
+    font-size: 25px;
+    font-weight: 700;
 }
 
 .line{
@@ -18,34 +35,213 @@ body{
     border-color: black;
 }
 
-.image-mems{
+
+.image-mems-first{
     margin: 0 auto;
+    transition: 0.4s;
+    object-fit: cover;
 }
 
-.first-mem{
+.image-mems-second{
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.image-mems-third{
+    margin: 0 auto;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+.image-mems-fourth{
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.image-mems-fives{
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.wrapper-title{
     display: flex;
-    flex-direction: column;
+    align-items: center;
 }
 
-.second-mem{
+.plus-one::before,
+.plus-one
+{
+    border: 2px solid;
+    height: 21px;
+    margin-right: 15px;
+    margin-left: auto;
+    margin-top: -2.9px;
+    transition: 0.4s;
+    /* color: black; */
+    opacity: 0;
+}
+
+.test{
+    opacity: 0;
+}
+
+.plus-one::before{
+    position: absolute;
+    content: '';
+    transform: rotate(90deg);
+    height: 19.5px;
+}
+
+.title-mem-input {
+	display: none;
+}
+
+.title-mem{
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    color: rgb(12, 14, 157);
 }
 
-.third-mem{
+.label {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+	height: 0;
+    overflow: hidden;
+	transition: 0.7s;
+    opacity: 0;
 }
 
-.fourth-mem{
-    display: flex;
-    flex-direction: column;
+.one:hover .label {
+	height: auto;
+	padding: 10px 0;
+    opacity: 1;
 }
 
-.fives-mem{
-    display: flex;
-    flex-direction: column;
+.two:hover .label {
+	height: auto;
+	padding: 10px 0;
+    opacity: 1;
 }
 
+.three:hover .label {
+	height: auto;
+	padding: 10px 0;
+    opacity: 1;
+}
 
+.four:hover .label {
+	height: auto;
+	padding: 10px 0;
+    opacity: 1;
+}
+
+.five:hover .label {
+	height: auto;
+	padding: 10px 0;
+    opacity: 1;
+}
+
+.main_wrapper:hover .plus-one,.plus-one::before{
+    opacity: 1;
+}
+
+.one:hover .plus-one::before{
+    transition: 0.4s;
+    position: absolute;
+    content: '';
+    transform: rotate(85deg);
+    height: 19px;
+}
+
+.one:hover .plus-one{
+    transform: rotate(-45deg);
+    transition: 0.4s;
+}
+
+.two:hover .plus-one::before{
+    transition: 0.4s;
+    position: absolute;
+    content: '';
+    transform: rotate(85deg);
+    height: 19px;
+}
+
+.two:hover .plus-one{
+    transform: rotate(-45deg);
+    transition: 0.4s;
+}
+
+.three:hover .plus-one::before{
+    transition: 0.4s;
+    position: absolute;
+    content: '';
+    transform: rotate(85deg);
+    height: 19px;
+}
+
+.three:hover .plus-one{
+    transform: rotate(-45deg);
+    transition: 0.4s;
+}
+
+.four:hover .plus-one::before{
+    transition: 0.4s;
+    position: absolute;
+    content: '';
+    transform: rotate(85deg);
+    height: 19px;
+}
+
+.four:hover .plus-one{
+    transform: rotate(-45deg);
+    transition: 0.4s;
+}
+
+.five:hover .plus-one::before{
+    transition: 0.4s;
+    position: absolute;
+    content: '';
+    transform: rotate(85deg);
+    height: 19px;
+}
+
+.five:hover .plus-one{
+    transform: rotate(-45deg);
+    transition: 0.4s;
+}
+
+.title-mem-input:checked + .title-mem + .label{
+	height: auto;
+	padding: 10px 0;
+    opacity: 1;
+}
+
+.title-mem-input:active + .title-mem + .label{
+	opacity: 0.5;
+}
+
+.title-mem-input:checked + .title-mem{
+    opacity: 1;
+    color: black;
+}
+
+.title-mem-input:active + .title-mem{
+	color: rgb(12, 14, 157);
+    opacity: 0.7;
+}
+
+/* .title-mem-input:active + .plus-one{
+	color: rgb(12, 14, 157);
+    opacity: 0.7;
+} */
+
+.title-mem-input:checked + .test{
+    transform: rotate(-45deg);
+    transition: 0.4s;
+}
+
+.label:hover{
+    cursor: pointer;
+}
 
